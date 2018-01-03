@@ -28,7 +28,7 @@ rooms[:data][:rooms].each {|room|
 # Find events taking place in room 201
 events = []
 rooms[:data][:events].each {|event|
-  if event[:room_id] = id
+  if event[:room_id] == id
     events << event
   end
 }
